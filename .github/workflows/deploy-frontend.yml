@@ -39,7 +39,7 @@ jobs:
 
       # Se vincula el entorno de ejecución con el clúster de Kubernetes
       - name: Actualizar Kubeconfig
-        run: aws eks update-kubeconfig --region us-east-1 --name proyectoeks
+        run: aws eks update-kubeconfig --region us-east-1 --name projecteks
 
       # Se aplican los manifiestos para actualizar la aplicación y sus reglas de escalado
       - name: Desplegar Frontend en EKS
